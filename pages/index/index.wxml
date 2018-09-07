@@ -10,4 +10,8 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
+  <navigator class="page-foot" openType="switchTab" url="/page/component/index" hover-class="none">
+    <image class="icon-foot" src="../../../../image/icon_foot.png"></image>
+  </navigator>
+
 </view>
