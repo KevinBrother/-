@@ -12,3 +12,17 @@ image {
 .center {
   text-align: center
 }
+
+.body {
+  width: 400rpx;
+  height: 400rpx;
+  /* background: red; */
+}
+
+.select {
+  display: inline-block;
+}
+
+.in_block {
+  display: inline-block
+}

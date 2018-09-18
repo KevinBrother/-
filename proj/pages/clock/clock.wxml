@@ -1,10 +1,15 @@
 <view class='content center'>
-  <view class='h1'>
-   00:00:00
-  </view>
-  <view class='play_img center' bindtap='start'>
-    <image wx:if="{{play}}" src='../../image/play.png'></image>
-    <image wx:if="{{pause}}" src='../../image/pause.png'></image>
-  </view>
+  <view class='body in_block'>
+    <view class='h1'>
+    {{time}}
+    </view>
+    <view class='select in_block'>
+      <view class='play_img' bindtap='start'>
+        <image wx:if="{{play}}" src='../../image/play.png'  bindtap='play'></image>
+        <image wx:if="{{pause}}" src='../../image/pause.png' bindtap='pause'></image>
+      </view>
+    </view>  
+    <view class=''></view>
+  </view>  
 </view>
 

@@ -5,7 +5,8 @@ Page({
    */
   data: {
     play: true,
-    pause: false
+    pause: false,
+    time:"00:25:00"
   },
 
   /**
@@ -76,5 +77,19 @@ Page({
         pause: false
       })
     }
-  }
+  },
+
+  play: function(){
+    console.log("play");
+
+    setInterval(this.time, 1000);
+  },
+
+  pause: function(){
+    console.log("pause")
+  },
+
+  time: function() {
+    
+  },
 })
