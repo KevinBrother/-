@@ -2,8 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/clock/clock",
-    "pages/metronome/metronome"
+    "pages/metronome/metronome",
+    "pages/test/test"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -14,7 +14,7 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/clock/clock",
+        "pagePath": "pages/index/index",
         "iconPath": "image/icon_component_HL.png",
         "text": "计时器"
       },
@@ -22,6 +22,11 @@
         "pagePath": "pages/metronome/metronome",
         "iconPath": "image/icon_component.png",
         "text": "节拍器"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "iconPath": "image/icon_component.png",
+        "text": "测试案列"
       }
     ]
   }

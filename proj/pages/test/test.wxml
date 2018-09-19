@@ -1,0 +1,5 @@
+
+<view>
+<view>data is:{{result}}</view>
+<button type='primary' bindtap='getSid'>请求sid</button>
+</view>

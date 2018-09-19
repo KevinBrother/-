@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -39,9 +39,10 @@
 			"current": 0,
 			"list": [
 				{
-					"id": -1,
-					"name": "clock",
-					"pathName": "pages/clock/clock"
+					"id": 0,
+					"name": "test",
+					"pathName": "pages/test/test",
+					"query": ""
 				}
 			]
 		}
