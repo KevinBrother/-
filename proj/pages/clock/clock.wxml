@@ -1,12 +1,12 @@
 <view class='content center'>
   <view class='body in_block'>
     <view class='h1'>
-    {{time}}
+    {{point}}
     </view>
     <view class='select in_block'>
-      <view class='play_img' bindtap='start'>
-        <image wx:if="{{play}}" src='../../image/play.png'  bindtap='play'></image>
-        <image wx:if="{{pause}}" src='../../image/pause.png' bindtap='pause'></image>
+      <view class='play_img' bindtap='go'>
+        <image wx:if="{{play}}" src='../../image/play.png'></image>
+        <image wx:if="{{pause}}" src='../../image/pause.png'></image>
       </view>
     </view>  
     <view class=''></view>
