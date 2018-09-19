@@ -20,9 +20,20 @@ image {
 }
 
 .select {
-  display: inline-block;
+  width: 10rem;
+  height: 10rem;
 }
 
 .in_block {
   display: inline-block
+}
+
+.restart {
+  width: 3rem;
+  height: 3rem;
+  margin-top: 1rem;
+}
+
+.fl {
+  float: left
 }

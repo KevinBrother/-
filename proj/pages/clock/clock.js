@@ -93,6 +93,15 @@ Page({
     })
   },
 
+  restart: function() {
+    this.stop();
+    this.endInterval();
+    this.endVibrate();
+    this.setData({
+      point: "00:25:00"
+    })
+  },
+
   // 开始计时器
   startInterval: function() {
     var that = this;
@@ -100,6 +109,9 @@ Page({
       var point = that.data.point;
       if (point == "00:00:00") {
         that.stop();
+        that.endInterval();
+        that.startVibrate();
+        return;
       }
 
       var arr = point.split(":");
@@ -126,4 +138,17 @@ Page({
     clearInterval(that.data.setInter);
   },
 
+  // 开始震动
+  startVibrate: function() {
+    var that = this;
+    that.data.vibrateInterval = setInterval(function() {
+      wx.vibrateLong()
+    }, 3000);
+  },
+
+  // 关闭震动
+  endVibrate: function() {
+    var that = this;
+    clearInterval(that.data.vibrateInterval);
+  }
 })

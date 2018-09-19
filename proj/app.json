@@ -2,12 +2,27 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/clock/clock"
+    "pages/clock/clock",
+    "pages/metronome/metronome"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/clock/clock",
+        "iconPath": "image/icon_component_HL.png",
+        "text": "计时器"
+      },
+      {
+        "pagePath": "pages/metronome/metronome",
+        "iconPath": "image/icon_component.png",
+        "text": "节拍器"
+      }
+    ]
   }
 }
